@@ -1,0 +1,5 @@
+{
+    "navigationBarTitleText": "31天内步数排行",
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark"
+  }

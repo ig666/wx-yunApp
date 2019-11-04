@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/accredit/main",
+    "pages/index/main",
+    "pages/logs/main",
+    "pages/counter/main",
+    "pages/step/main"
+  ],
+  "permission": {
+    "scope.userInfo": {
+      "desc": "将用于展示个人头像"
+    },
+    "scope.werun":{
+      "desc":"将用于步数列表展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "添加",
+      "pagePath": "pages/index/main",
+      "iconPath": "static/tabs/home.png",
+      "selectedIconPath": "static/tabs/home-active.png"
+    }, {
+      "text": "想溜列表",
+      "pagePath": "pages/logs/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },
+    {
+      "text": "步数排行",
+      "pagePath": "pages/step/main",
+      "iconPath": "static/tabs/step.png",
+      "selectedIconPath": "static/tabs/step-active.png"
+    }
+  ],
+    "position": "bottom"
+  }
+}

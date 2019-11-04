@@ -1,0 +1,48 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"cloudfunctionRoot": "static/functions/",
+	"miniprogramRoot": "dist/wx/",
+	"compileType": "miniprogram",
+	"appid": "wx5cafac887327546a",
+	"projectname": "wexinyun-project",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "step",
+					"pathName": "pages/step/main",
+					"query": "images=https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLZrx7Lw6omcN39phZicvzht6Hty71IJEbRopZtYPanMKUukGibfVwXotY75JwUfmbxR7gpUlAlI6fg/132&name=陈陈陈",
+					"scene": null
+				}
+			]
+		}
+	}
+}
