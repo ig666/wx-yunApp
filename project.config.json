@@ -32,6 +32,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
@@ -40,6 +44,12 @@
 					"name": "step",
 					"pathName": "pages/step/main",
 					"query": "images=https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLZrx7Lw6omcN39phZicvzht6Hty71IJEbRopZtYPanMKUukGibfVwXotY75JwUfmbxR7gpUlAlI6fg/132&name=陈陈陈",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/main",
+					"pathName": "pages/index/main",
 					"scene": null
 				}
 			]

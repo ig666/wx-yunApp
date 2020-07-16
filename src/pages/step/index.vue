@@ -12,6 +12,7 @@
             </li>
         </ul>
         <button @click="sureNews">订阅</button>
+        <button @click="send">发送订阅消息</button>
     </div>
 </template>
 
@@ -34,6 +35,11 @@ export default {
         success (res) {
           console.log(res, '模板信息')
         }
+      })
+    },
+    send () {
+      wx.cloud.callFunction({ name: 'pushMessage' }).then(res => {
+        console.log(res, 'yun')
       })
     }
   },
