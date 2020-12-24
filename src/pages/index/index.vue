@@ -64,68 +64,68 @@
 </template>
 
 <script>
-var amapFile = require("../../libs/amap-wx");
+var amapFile = require('../../libs/amap-wx')
 export default {
-  data() {
+  data () {
     return {
-      id: "",
+      id: '',
       isSure: false,
       form: {
         switchChecked: false,
-        name: "",
-        phone: "",
-        gender: "1",
-      },
-    };
+        name: '',
+        phone: '',
+        gender: '1'
+      }
+    }
   },
 
   methods: {
-    radioChange(e) {
-      if (e.target.value === "1") {
-        this.form.gender = "1";
-      } else if (e.target.value === "2") {
-        this.form.gender = "2";
+    radioChange (e) {
+      if (e.target.value === '1') {
+        this.form.gender = '1'
+      } else if (e.target.value === '2') {
+        this.form.gender = '2'
       }
     },
-    formSubmit(e) {
+    formSubmit (e) {
       wx.cloud
         .callFunction({
-          name: "addPerson",
-          data: e.target.value,
+          name: 'addPerson',
+          data: e.target.value
         })
         .then((res) => {
-          console.log(res, "yun");
+          console.log(res, 'yun')
           if (res.result.errCode !== -1) {
             wx.showToast({
-              title: "新增成功",
+              title: '新增成功',
               duration: 7000,
               mask: true,
-              icon: "success",
-              success(res) {
-                wx.hideToast();
+              icon: 'success',
+              success (res) {
+                wx.hideToast()
                 wx.switchTab({
-                  url: "/pages/logs/main",
-                });
-              },
-            });
+                  url: '/pages/logs/main'
+                })
+              }
+            })
           }
-        });
-    },
+        })
+    }
   },
-  mounted() {
-    console.log("xxxxx");
+  mounted () {
+    console.log('xxxxx')
     // var that = this
-    var myAmapFun = new amapFile.AMapWX({ key: "高德Key" });
+    var myAmapFun = new amapFile.AMapWX({ key: '高德Key' })
     myAmapFun.getPoiAround({
       success: function (data) {
-        console.log("高德数据", data);
+        console.log('高德数据', data)
         // 成功回调
       },
       fail: function (info) {
         // 失败回调
-        console.log(info);
-      },
-    });
+        console.log(info)
+      }
+    })
     // // 1. 获取数据库引用
     // const db = wx.cloud.database()
     // // 2. 构造查询语句
@@ -138,8 +138,8 @@ export default {
     //     console.log(res)
     //   }
     // })
-  },
-};
+  }
+}
 </script>
 
 <style scoped>
