@@ -4,7 +4,7 @@
     <view class="map_container">
       <!--定义页面结构，可以使用地图组件也能使用其他组件 -->
     </view>
-    <!-- <txv-video vid="e0354z3cqjp" playerid="txv1"></txv-video> -->
+    <txv-video vid="e0354z3cqjp" playerid="txv1"></txv-video>
     <div id="Addpage">
       <form @submit="formSubmit">
         <view class="section section_gap">
