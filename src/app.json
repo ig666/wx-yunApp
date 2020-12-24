@@ -42,7 +42,7 @@
         "text": "步数排行",
         "pagePath": "pages/step/main",
         "iconPath": "static/tabs/step.png",
-        "selectedIconPath": "static/tabs/step.png"
+        "selectedIconPath": "static/tabs/step-active.png"
       }
     ],
     "position": "bottom"
